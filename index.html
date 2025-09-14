@@ -103,7 +103,7 @@
       color: #c5cee0;
       line-height: 1.5;
       flex-grow: 1;
-      display: flex;
+      display: block;
       flex-direction: column;
       justify-content: flex-start;
     }
@@ -302,7 +302,7 @@
 
     // === Save button -> update notes
     modalSave.addEventListener('click', () => {
-      notesBody.innerHTML = modalTextarea.value.replace(/\n/g, "<br>");
+  notesBody.innerHTML = modalTextarea.value;
       modalBg.style.display = 'none';
     });
 
@@ -313,3 +313,4 @@
   </script>
 </body>
 </html>
+
